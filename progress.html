@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress</title>
-    <link rel="stylesheet" href="./progress.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker - Progress</title>
+  <link rel="stylesheet" href="./progress.css">
 </head>
 <body>
-    <div id="main-ui" class="center-content">
-        <h1>Main UI</h1>
-        <button id="navigate-to-progress-bar" class="button">Go to Progress Bar</button>
-        <button id="back-to-home" class="button">Back to Home</button>
+  <header class="header">
+    <h1>Habit Tracker</h1>
+    <nav>
+      <a href="./habittracker.html" class="back-button">Back to Main Page</a>
+    </nav>
+  </header>
+
+  <main class="progress-container">
+    <h2>Your Habit Progress</h2>
+
+    <div id="habit-input-container">
+      <input type="text" id="habit-name" placeholder="Enter your habit (e.g., Coding)">
+      <input type="number" id="habit-target" placeholder="Target hours">
+      <button id="add-habit-btn">Add Habit</button>
     </div>
-    
-    <div id="progress-bar-ui" class="center-content" style="display: none;">
-        <h1>Interactive Progress Bar</h1>
-        <div id="progress-container">
-            <div id="progress-bar" style="width: 0;"></div>
-            <span id="progress-text">0%</span>
-        </div>
-        <button id="back-to-main" class="button">Back to Main</button>
-        <button id="back-to-home" class="button">Back to Home</button>
-    </div>
-    
-    
-    
-<script src="./progress.js"></script>    
+
+    <div id="habits-container"></div>
+  </main>
+
+  
+  <script src="./progress.js"></script>
 </body>
 </html>
