@@ -1,14 +1,14 @@
 
-        function updateMaxStreak(newStreak) {
-            document.getElementById('max-streak').innerText = `${newStreak} Days`;
-        }
+        
 
-        function updateProgress(newProgress) {
-            const progressBar = document.getElementById('progress-bar');
-            const progressText = document.getElementById('progress-text');
-            progressBar.value = newProgress;
-            progressText.innerText = `${newProgress}%`;
-        }
+        
+            document.querySelectorAll('#progress-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    window.location.href = 'progress.html';
+                });
+            });
+            
+    
 
         function viewStatistics() {
             alert('Viewing statistics functionality coming soon!');
@@ -29,4 +29,3 @@
         calendarContent.addEventListener('mouseleave', () => {
             calendarContent.innerText = '[Calendar goes here]';
         });
- 
